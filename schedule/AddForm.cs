@@ -21,14 +21,14 @@ namespace schedule
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ToMainForm(textBox1.Text, textBox2.Text);
+            ToMainForm(year.Text, month.Text);
             EndForm(); 
         }
 
         private void EndForm()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
+            year.Text = "";
+            month.Text = "";
             this.Close();
         }
     }
