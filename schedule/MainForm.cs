@@ -11,14 +11,17 @@ using System.Windows.Forms;
 
 namespace schedule
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         int tCounter = 100;
-        public Form1()
+        AddForm frm2 = new AddForm();
+        public MainForm()
         {
             InitializeComponent();
-           
 
+            listView1.ListViewItemSorter = new ListViewItemComparer();
+            listView1.Sort();
+            AddForm.ToMainForm += new ToMainForm(addLIst);
         }
 
         private void AddListButton_Click(object sender, EventArgs e)
@@ -38,8 +41,12 @@ namespace schedule
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listView1.ListViewItemSorter = new ListViewItemComparer();
-            listView1.Sort();
+            
+            frm2.ShowDialog();
+        }
+        public void addLIst(string a, string b)
+        {
+            listView1.Items.Add(new ListViewItem(new string[] {a,b}));
         }
     }
 
