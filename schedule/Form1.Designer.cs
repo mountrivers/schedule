@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.AddListButton = new System.Windows.Forms.Button();
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.AddListButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -60,6 +61,7 @@
             this.AddListButton.TabIndex = 1;
             this.AddListButton.Text = "add";
             this.AddListButton.UseVisualStyleBackColor = true;
+            this.AddListButton.UseWaitCursor = true;
             this.AddListButton.Click += new System.EventHandler(this.AddListButton_Click);
             // 
             // textBox1
@@ -68,12 +70,24 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 2;
+            this.textBox1.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(496, 99);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 148);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.AddListButton);
             this.Controls.Add(this.listView1);
@@ -92,6 +106,7 @@
         private System.Windows.Forms.ColumnHeader date;
         private System.Windows.Forms.ColumnHeader title;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

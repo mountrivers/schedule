@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,15 @@ namespace schedule
         public Form1()
         {
             InitializeComponent();
+           
+
         }
 
         private void AddListButton_Click(object sender, EventArgs e)
         {
             listView1.Items.Add(new ListViewItem(new string[] {tCounter.ToString(), "100" }));
-            tCounter++;
+            tCounter += new Random().Next(-100, 100);
+           
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -30,6 +34,20 @@ namespace schedule
             indexNum = listView1.FocusedItem.Index;
             string test = listView1.Items[indexNum].SubItems[0].Text;
             textBox1.Text = test;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.ListViewItemSorter = new ListViewItemComparer();
+            listView1.Sort();
+        }
+    }
+
+    class ListViewItemComparer : IComparer
+    {
+        public int Compare(object x, object y)
+        {
+            return String.Compare(((ListViewItem)x).SubItems[0].Text, ((ListViewItem)y).SubItems[0].Text);
         }
     }
 }
