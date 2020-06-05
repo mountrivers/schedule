@@ -64,7 +64,7 @@
             this.saveButton.TabIndex = 5;
             this.saveButton.Text = "저장";
             this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.button1_Click);
+            this.saveButton.Click += new System.EventHandler(this.SaveButtonClick);
             // 
             // date
             // 
@@ -140,6 +140,7 @@
             this.cancleButton.TabIndex = 6;
             this.cancleButton.Text = "종료";
             this.cancleButton.UseVisualStyleBackColor = true;
+            this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
             // 
             // AddForm
             // 
