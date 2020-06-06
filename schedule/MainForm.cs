@@ -44,7 +44,7 @@ namespace schedule
             
             frm2.ShowDialog();
         }
-        public void addLIst(string a, string b)
+        public void addLIst(string a, string b,string c)
         {
             listView1.Items.Add(new ListViewItem(new string[] {a,b}));
         }

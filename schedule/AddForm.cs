@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace schedule
 {
-    public delegate void ToMainForm(string a, string b);
+    public delegate void ToMainForm(string a, string b,string c);
     public partial class AddForm : Form
     {
         public static event ToMainForm ToMainForm;
@@ -109,7 +109,7 @@ namespace schedule
             if (!fail)
             {
                 dateSet = y + "." + m + "." + d + "-" + t;
-                ToMainForm(dateSet,content.Text);
+                ToMainForm(dateSet,content.Text,link.Text);
                 EndForm();
 
             }
@@ -123,6 +123,7 @@ namespace schedule
             date.Text = "";
             time.Text = "";
             content.Text ="";
+            link.Text = "";
             this.Close();
         }
 

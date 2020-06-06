@@ -40,6 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.TextBox();
             this.cancleButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.link = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // year
@@ -58,10 +60,10 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(423, 69);
+            this.saveButton.Location = new System.Drawing.Point(463, 71);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 5;
+            this.saveButton.Size = new System.Drawing.Size(100, 23);
+            this.saveButton.TabIndex = 10;
             this.saveButton.Text = "저장";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.SaveButtonClick);
@@ -134,25 +136,43 @@
             // 
             // cancleButton
             // 
-            this.cancleButton.Location = new System.Drawing.Point(504, 69);
+            this.cancleButton.Location = new System.Drawing.Point(463, 100);
             this.cancleButton.Name = "cancleButton";
-            this.cancleButton.Size = new System.Drawing.Size(75, 23);
-            this.cancleButton.TabIndex = 6;
+            this.cancleButton.Size = new System.Drawing.Size(100, 23);
+            this.cancleButton.TabIndex = 11;
             this.cancleButton.Text = "종료";
             this.cancleButton.UseVisualStyleBackColor = true;
             this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 15);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "링크";
+            // 
+            // link
+            // 
+            this.link.Location = new System.Drawing.Point(53, 101);
+            this.link.Name = "link";
+            this.link.Size = new System.Drawing.Size(363, 25);
+            this.link.TabIndex = 4;
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 108);
+            this.ClientSize = new System.Drawing.Size(590, 145);
             this.Controls.Add(this.cancleButton);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.link);
             this.Controls.Add(this.content);
             this.Controls.Add(this.time);
             this.Controls.Add(this.date);
@@ -180,5 +200,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox time;
         private System.Windows.Forms.Button cancleButton;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox link;
     }
 }
