@@ -46,7 +46,16 @@ namespace schedule
         }
         public void addLIst(string a, string b,string c)
         {
-            listView1.Items.Add(new ListViewItem(new string[] {a,b}));
+            listView1.Items.Add(new ListViewItem(new string[] {a,b,c}));
+        }
+
+        private void linkButton_Click(object sender, EventArgs e)
+        {
+            int indexNum;
+            indexNum = listView1.FocusedItem.Index;
+            string test = listView1.Items[indexNum].SubItems[2].Text;
+            System.Diagnostics.Process.Start(test);
+            
         }
     }
 
