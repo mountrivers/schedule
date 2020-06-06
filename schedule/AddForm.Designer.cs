@@ -158,7 +158,7 @@
             this.link.Location = new System.Drawing.Point(53, 101);
             this.link.Name = "link";
             this.link.Size = new System.Drawing.Size(363, 25);
-            this.link.TabIndex = 4;
+            this.link.TabIndex = 5;
             // 
             // AddForm
             // 
