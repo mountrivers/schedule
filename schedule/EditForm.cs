@@ -28,9 +28,12 @@ namespace schedule
             {
                 Thread.Sleep(100);
 
-                year.Text = a;
-                month.Text = b;
-                time.Text = c;
+                year.Text = a.Substring(0,4);
+                month.Text = a.Substring(5,2);
+                date.Text = a.Substring(8,2);
+                time.Text = a.Substring(11, 2);
+                content.Text = b;
+                link.Text = c;
                 // CAUTION: use Invoke where necessary
             });
         }

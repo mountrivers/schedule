@@ -32,7 +32,6 @@
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.link = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.AddListButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkButton = new System.Windows.Forms.Button();
@@ -60,26 +59,18 @@
             // 
             // date
             // 
+            this.date.Text = "날짜";
             this.date.Width = 100;
             // 
             // title
             // 
+            this.title.Text = "내용";
             this.title.Width = 100;
             // 
             // link
             // 
+            this.link.Text = "링크";
             this.link.Width = 100;
-            // 
-            // AddListButton
-            // 
-            this.AddListButton.Location = new System.Drawing.Point(391, 128);
-            this.AddListButton.Name = "AddListButton";
-            this.AddListButton.Size = new System.Drawing.Size(325, 93);
-            this.AddListButton.TabIndex = 1;
-            this.AddListButton.Text = "테스트 데이터 추가";
-            this.AddListButton.UseVisualStyleBackColor = true;
-            this.AddListButton.UseWaitCursor = true;
-            this.AddListButton.Click += new System.EventHandler(this.AddListButton_Click);
             // 
             // textBox1
             // 
@@ -144,7 +135,6 @@
             this.Controls.Add(this.linkButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.AddListButton);
             this.Controls.Add(this.listView1);
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -157,7 +147,6 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button AddListButton;
         private System.Windows.Forms.ColumnHeader date;
         private System.Windows.Forms.ColumnHeader title;
         private System.Windows.Forms.TextBox textBox1;
