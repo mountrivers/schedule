@@ -14,7 +14,8 @@ namespace schedule
     public partial class MainForm : Form
     {
         int tCounter = 100;
-        AddForm frm2 = new AddForm();
+        AddForm addForm = new AddForm();
+        EditForm editForm = new EditForm();
         public MainForm()
         {
             InitializeComponent();
@@ -49,7 +50,7 @@ namespace schedule
         private void button1_Click(object sender, EventArgs e)
         {
             
-            frm2.ShowDialog();
+            addForm.ShowDialog();
         }
         public void addLIst(string a, string b,string c)
         {
@@ -69,6 +70,11 @@ namespace schedule
         {
             listView1.Items.Remove(listView1.FocusedItem);
             listView1.FocusedItem = null;
+        }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            editForm.ShowDialog();
         }
     }
 
