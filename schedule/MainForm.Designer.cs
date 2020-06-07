@@ -31,11 +31,12 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.link = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AddListButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.link = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.linkButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -49,7 +50,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 1);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(324, 449);
+            this.listView1.Size = new System.Drawing.Size(324, 302);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.UseWaitCursor = true;
@@ -64,6 +65,10 @@
             // 
             this.title.Width = 100;
             // 
+            // link
+            // 
+            this.link.Width = 100;
+            // 
             // AddListButton
             // 
             this.AddListButton.Location = new System.Drawing.Point(664, 100);
@@ -77,7 +82,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(360, 12);
+            this.textBox1.Location = new System.Drawing.Point(436, 25);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 2;
@@ -85,35 +90,43 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(565, 100);
+            this.button1.Location = new System.Drawing.Point(664, 268);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
+            this.button1.Text = "일정추가";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // link
-            // 
-            this.link.Width = 100;
-            // 
             // linkButton
             // 
-            this.linkButton.Location = new System.Drawing.Point(360, 100);
+            this.linkButton.Location = new System.Drawing.Point(360, 268);
             this.linkButton.Name = "linkButton";
             this.linkButton.Size = new System.Drawing.Size(75, 23);
             this.linkButton.TabIndex = 4;
-            this.linkButton.Text = "link";
+            this.linkButton.Text = "링크";
             this.linkButton.UseVisualStyleBackColor = true;
             this.linkButton.UseWaitCursor = true;
             this.linkButton.Click += new System.EventHandler(this.linkButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(459, 268);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 5;
+            this.deleteButton.Text = "삭제";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 148);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(751, 303);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.linkButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ColumnHeader link;
         private System.Windows.Forms.Button linkButton;
+        private System.Windows.Forms.Button deleteButton;
     }
 }
 

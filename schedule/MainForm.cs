@@ -35,8 +35,15 @@ namespace schedule
         {
             int indexNum;
             indexNum = listView1.FocusedItem.Index;
-            string test = listView1.Items[indexNum].SubItems[0].Text;
-            textBox1.Text = test;
+            if (indexNum >= 0)
+            {
+                string test = listView1.Items[indexNum].SubItems[0].Text;
+                textBox1.Text = test;
+            }
+            else
+            {
+                textBox1.Text = "";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +63,12 @@ namespace schedule
             string test = listView1.Items[indexNum].SubItems[2].Text;
             System.Diagnostics.Process.Start(test);
             
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Remove(listView1.FocusedItem);
+            listView1.FocusedItem = null;
         }
     }
 
