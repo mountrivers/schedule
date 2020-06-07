@@ -11,8 +11,11 @@ using System.Windows.Forms;
 
 namespace schedule
 {
+    public delegate void ToEditForm(string a, string b, string c);
     public partial class MainForm : Form
     {
+        public static event ToEditForm ToEditForm;
+
         int tCounter = 100;
         AddForm addForm = new AddForm();
         EditForm editForm = new EditForm();
@@ -25,6 +28,7 @@ namespace schedule
             listView1.ListViewItemSorter = new ListViewItemComparer();
             listView1.Sort();
             AddForm.ToMainForm += new ToMainForm(addLIst);
+            EditForm.ToMainEdit += new ToMainForm(editList);
         }
 
         private void AddListButton_Click(object sender, EventArgs e)
@@ -58,6 +62,14 @@ namespace schedule
         {
             listView1.Items.Add(new ListViewItem(new string[] {a,b,c}));
         }
+        public void editList(string a, string b, string c)
+        {
+            toChange.SubItems[0].Text = a;
+            toChange.SubItems[1].Text = b;
+            toChange.SubItems[2].Text = c;
+
+
+        }
 
         private void linkButton_Click(object sender, EventArgs e)
         {
@@ -79,6 +91,8 @@ namespace schedule
             toChange = listView1.FocusedItem;
             if (toChange != null)
             {
+                ToEditForm(toChange.SubItems[0].Text, toChange.SubItems[1].Text, toChange.SubItems[2].Text);
+
                 editForm.ShowDialog();
             }
             else

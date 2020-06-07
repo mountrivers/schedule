@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,21 @@ namespace schedule
         public EditForm()
         {
             InitializeComponent();
+            MainForm.ToEditForm += new ToEditForm(editList);
+
+        }
+        
+        private void editList(string a, string b, string c)
+        {
+            ThreadPool.QueueUserWorkItem((state) =>
+            {
+                Thread.Sleep(100);
+
+                year.Text = a;
+                month.Text = b;
+                time.Text = c;
+                // CAUTION: use Invoke where necessary
+            });
         }
 
         private void saveButton_Click(object sender, EventArgs e)
@@ -126,6 +142,7 @@ namespace schedule
         }
         private void cancleButton_Click(object sender, EventArgs e)
         {
+
             EndForm();
         }
     }
