@@ -72,11 +72,11 @@
             // 
             // AddListButton
             // 
-            this.AddListButton.Location = new System.Drawing.Point(664, 100);
+            this.AddListButton.Location = new System.Drawing.Point(391, 128);
             this.AddListButton.Name = "AddListButton";
-            this.AddListButton.Size = new System.Drawing.Size(75, 23);
+            this.AddListButton.Size = new System.Drawing.Size(325, 93);
             this.AddListButton.TabIndex = 1;
-            this.AddListButton.Text = "add";
+            this.AddListButton.Text = "테스트 데이터 추가";
             this.AddListButton.UseVisualStyleBackColor = true;
             this.AddListButton.UseWaitCursor = true;
             this.AddListButton.Click += new System.EventHandler(this.AddListButton_Click);

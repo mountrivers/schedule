@@ -16,6 +16,8 @@ namespace schedule
         int tCounter = 100;
         AddForm addForm = new AddForm();
         EditForm editForm = new EditForm();
+        ListViewItem toChange;
+
         public MainForm()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace schedule
 
         private void AddListButton_Click(object sender, EventArgs e)
         {
-            listView1.Items.Add(new ListViewItem(new string[] {tCounter.ToString(), "100" }));
+            listView1.Items.Add(new ListViewItem(new string[] {tCounter.ToString(), "100","as" }));
             tCounter += new Random().Next(-100, 100);
            
         }
@@ -74,7 +76,15 @@ namespace schedule
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            editForm.ShowDialog();
+            toChange = listView1.FocusedItem;
+            if (toChange != null)
+            {
+                editForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("먼저 바꿀것을 선택 해 주세요");
+            }
         }
     }
 
