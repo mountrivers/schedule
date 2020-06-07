@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.linkButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -118,7 +119,17 @@
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "삭제";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.UseWaitCursor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(560, 268);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "수정";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -126,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(751, 303);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.linkButton);
             this.Controls.Add(this.button1);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.ColumnHeader link;
         private System.Windows.Forms.Button linkButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button button2;
     }
 }
 
