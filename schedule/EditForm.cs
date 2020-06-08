@@ -55,7 +55,7 @@ namespace schedule
             {
                 if (yy > 10 && yy < 100)
                 {
-                    y = "20" + y;
+                    y = "20" + yy.ToString();
                 }
                 else if (yy < 2000 || yy > 3000)
                 {
@@ -74,7 +74,7 @@ namespace schedule
                 {
                     if (mm >= 1 && mm <= 9)
                     {
-                        m = "0" + m;
+                        m = "0" + mm.ToString();
                     }
                     else if (mm < 10 || mm > 12)
                     {
@@ -95,7 +95,7 @@ namespace schedule
                 {
                     if (dd >= 1 && mm <= 9)
                     {
-                        d = "0" + d;
+                        d = "0" + dd.ToString();
                     }
                     else if (dd < 0 || dd > 31)
                     {
@@ -116,7 +116,7 @@ namespace schedule
                 {
                     if (tt >= 1 && tt <= 9)
                     {
-                        t = "0" + t;
+                        t = "0" + tt.ToString();
                     }
                     else if (tt < 10 || tt > 24)
                     {
