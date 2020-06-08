@@ -73,7 +73,7 @@ namespace schedule
             {
                 if (!fail)
                 {
-                    if (dd >= 1 && mm <= 9)
+                    if (dd >= 1 && dd <= 9)
                     {
                         d = "0" + dd.ToString();
                     }
