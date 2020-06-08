@@ -32,11 +32,12 @@
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.link = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textDay = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
+            this.textContent = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listView1
@@ -50,7 +51,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 1);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(324, 302);
+            this.listView1.Size = new System.Drawing.Size(258, 302);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.UseWaitCursor = true;
@@ -72,19 +73,21 @@
             this.link.Text = "링크";
             this.link.Width = 100;
             // 
-            // textBox1
+            // textDay
             // 
-            this.textBox1.Location = new System.Drawing.Point(436, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.UseWaitCursor = true;
+            this.textDay.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textDay.Location = new System.Drawing.Point(288, 45);
+            this.textDay.Name = "textDay";
+            this.textDay.Size = new System.Drawing.Size(100, 25);
+            this.textDay.TabIndex = 2;
+            this.textDay.UseWaitCursor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(664, 268);
+            this.button1.Location = new System.Drawing.Point(536, 85);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(194, 45);
             this.button1.TabIndex = 3;
             this.button1.Text = "일정추가";
             this.button1.UseVisualStyleBackColor = true;
@@ -93,9 +96,9 @@
             // 
             // linkButton
             // 
-            this.linkButton.Location = new System.Drawing.Point(360, 268);
+            this.linkButton.Location = new System.Drawing.Point(288, 227);
             this.linkButton.Name = "linkButton";
-            this.linkButton.Size = new System.Drawing.Size(75, 23);
+            this.linkButton.Size = new System.Drawing.Size(194, 55);
             this.linkButton.TabIndex = 4;
             this.linkButton.Text = "링크";
             this.linkButton.UseVisualStyleBackColor = true;
@@ -104,9 +107,9 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(459, 268);
+            this.deleteButton.Location = new System.Drawing.Point(536, 227);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.Size = new System.Drawing.Size(194, 48);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "삭제";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -115,14 +118,22 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(560, 268);
+            this.editButton.Location = new System.Drawing.Point(536, 147);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.Size = new System.Drawing.Size(194, 51);
             this.editButton.TabIndex = 6;
             this.editButton.Text = "수정";
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.UseWaitCursor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
+            // 
+            // textContent
+            // 
+            this.textContent.Location = new System.Drawing.Point(288, 97);
+            this.textContent.Name = "textContent";
+            this.textContent.Size = new System.Drawing.Size(100, 25);
+            this.textContent.TabIndex = 2;
+            this.textContent.UseWaitCursor = true;
             // 
             // MainForm
             // 
@@ -134,7 +145,8 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.linkButton);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textContent);
+            this.Controls.Add(this.textDay);
             this.Controls.Add(this.listView1);
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -149,12 +161,13 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader date;
         private System.Windows.Forms.ColumnHeader title;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textDay;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ColumnHeader link;
         private System.Windows.Forms.Button linkButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.TextBox textContent;
     }
 }
 

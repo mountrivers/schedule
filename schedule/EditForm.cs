@@ -118,7 +118,7 @@ namespace schedule
                     {
                         t = "0" + t;
                     }
-                    else if (mm < 10 || mm > 12)
+                    else if (tt < 10 || tt > 24)
                     {
                         MessageBox.Show("시간을 확인해주세요");
                         fail = true;

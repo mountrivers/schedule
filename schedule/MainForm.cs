@@ -44,12 +44,13 @@ namespace schedule
             indexNum = listView1.FocusedItem.Index;
             if (indexNum >= 0)
             {
-                string test = listView1.Items[indexNum].SubItems[0].Text;
-                textBox1.Text = test;
+                
+                textDay.Text = listView1.Items[indexNum].SubItems[0].Text;
+                textContent.Text = listView1.Items[indexNum].SubItems[1].Text;
             }
             else
             {
-                textBox1.Text = "";
+                textDay.Text = "";
             }
         }
 
