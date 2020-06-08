@@ -77,18 +77,24 @@ namespace schedule
 
         private void linkButton_Click(object sender, EventArgs e)
         {
-            int indexNum;
-            indexNum = listView1.FocusedItem.Index;
-            string test = listView1.Items[indexNum].SubItems[2].Text;
-            System.Diagnostics.Process.Start(test);
+            if (listView1.FocusedItem != null)
+            {
+                int indexNum;
+                indexNum = listView1.FocusedItem.Index;
+                string test = listView1.Items[indexNum].SubItems[2].Text;
+                System.Diagnostics.Process.Start(test);
+            }
             
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            listView1.Items.Remove(listView1.FocusedItem);
-            listView1.FocusedItem = null;
-            SaveData();
+            if (listView1.FocusedItem != null)
+            {
+                listView1.Items.Remove(listView1.FocusedItem);
+                listView1.FocusedItem = null;
+                SaveData();
+            }
         }
 
         private void editButton_Click(object sender, EventArgs e)
