@@ -51,8 +51,9 @@
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 1);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(258, 302);
+            this.listView1.Size = new System.Drawing.Size(230, 246);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -62,12 +63,12 @@
             // date
             // 
             this.date.Text = "날짜";
-            this.date.Width = 100;
+            this.date.Width = 80;
             // 
             // title
             // 
             this.title.Text = "내용";
-            this.title.Width = 160;
+            this.title.Width = 140;
             // 
             // link
             // 
@@ -78,17 +79,19 @@
             // 
             this.textDay.BackColor = System.Drawing.Color.White;
             this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textDay.Location = new System.Drawing.Point(555, 21);
+            this.textDay.Location = new System.Drawing.Point(486, 17);
+            this.textDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textDay.Name = "textDay";
-            this.textDay.Size = new System.Drawing.Size(161, 25);
+            this.textDay.Size = new System.Drawing.Size(141, 21);
             this.textDay.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(288, 227);
+            this.button1.Location = new System.Drawing.Point(252, 182);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 45);
+            this.button1.Size = new System.Drawing.Size(170, 36);
             this.button1.TabIndex = 3;
             this.button1.Text = "일정추가";
             this.button1.UseVisualStyleBackColor = false;
@@ -97,9 +100,10 @@
             // linkButton
             // 
             this.linkButton.BackColor = System.Drawing.Color.White;
-            this.linkButton.Location = new System.Drawing.Point(288, 129);
+            this.linkButton.Location = new System.Drawing.Point(252, 103);
+            this.linkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.linkButton.Name = "linkButton";
-            this.linkButton.Size = new System.Drawing.Size(194, 45);
+            this.linkButton.Size = new System.Drawing.Size(170, 36);
             this.linkButton.TabIndex = 4;
             this.linkButton.Text = "링크";
             this.linkButton.UseVisualStyleBackColor = false;
@@ -108,9 +112,10 @@
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(522, 227);
+            this.deleteButton.Location = new System.Drawing.Point(457, 182);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(194, 45);
+            this.deleteButton.Size = new System.Drawing.Size(170, 36);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "삭제";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -119,9 +124,10 @@
             // editButton
             // 
             this.editButton.BackColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(522, 129);
+            this.editButton.Location = new System.Drawing.Point(457, 103);
+            this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(194, 45);
+            this.editButton.Size = new System.Drawing.Size(170, 36);
             this.editButton.TabIndex = 6;
             this.editButton.Text = "수정";
             this.editButton.UseVisualStyleBackColor = false;
@@ -130,17 +136,18 @@
             // textContent
             // 
             this.textContent.BackColor = System.Drawing.Color.White;
-            this.textContent.Location = new System.Drawing.Point(288, 64);
+            this.textContent.Location = new System.Drawing.Point(252, 51);
+            this.textContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textContent.Name = "textContent";
-            this.textContent.Size = new System.Drawing.Size(428, 25);
+            this.textContent.Size = new System.Drawing.Size(375, 21);
             this.textContent.TabIndex = 2;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(751, 303);
+            this.ClientSize = new System.Drawing.Size(657, 242);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.linkButton);
@@ -149,6 +156,7 @@
             this.Controls.Add(this.textDay);
             this.Controls.Add(this.listView1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
