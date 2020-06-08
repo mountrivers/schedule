@@ -42,6 +42,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.White;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.date,
             this.title,
@@ -54,7 +55,6 @@
             this.listView1.Size = new System.Drawing.Size(258, 302);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.UseWaitCursor = true;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
@@ -66,80 +66,79 @@
             // title
             // 
             this.title.Text = "내용";
-            this.title.Width = 100;
+            this.title.Width = 160;
             // 
             // link
             // 
             this.link.Text = "링크";
-            this.link.Width = 100;
+            this.link.Width = 0;
             // 
             // textDay
             // 
-            this.textDay.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textDay.BackColor = System.Drawing.Color.White;
             this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textDay.Location = new System.Drawing.Point(288, 45);
+            this.textDay.Location = new System.Drawing.Point(555, 21);
             this.textDay.Name = "textDay";
-            this.textDay.Size = new System.Drawing.Size(100, 25);
+            this.textDay.Size = new System.Drawing.Size(161, 25);
             this.textDay.TabIndex = 2;
-            this.textDay.UseWaitCursor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(536, 85);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(288, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 45);
             this.button1.TabIndex = 3;
             this.button1.Text = "일정추가";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkButton
             // 
-            this.linkButton.Location = new System.Drawing.Point(288, 227);
+            this.linkButton.BackColor = System.Drawing.Color.White;
+            this.linkButton.Location = new System.Drawing.Point(288, 129);
             this.linkButton.Name = "linkButton";
-            this.linkButton.Size = new System.Drawing.Size(194, 55);
+            this.linkButton.Size = new System.Drawing.Size(194, 45);
             this.linkButton.TabIndex = 4;
             this.linkButton.Text = "링크";
-            this.linkButton.UseVisualStyleBackColor = true;
-            this.linkButton.UseWaitCursor = true;
+            this.linkButton.UseVisualStyleBackColor = false;
             this.linkButton.Click += new System.EventHandler(this.linkButton_Click);
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(536, 227);
+            this.deleteButton.BackColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(522, 227);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(194, 48);
+            this.deleteButton.Size = new System.Drawing.Size(194, 45);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "삭제";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.UseWaitCursor = true;
+            this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(536, 147);
+            this.editButton.BackColor = System.Drawing.Color.White;
+            this.editButton.Location = new System.Drawing.Point(522, 129);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(194, 51);
+            this.editButton.Size = new System.Drawing.Size(194, 45);
             this.editButton.TabIndex = 6;
             this.editButton.Text = "수정";
-            this.editButton.UseVisualStyleBackColor = true;
-            this.editButton.UseWaitCursor = true;
+            this.editButton.UseVisualStyleBackColor = false;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // textContent
             // 
-            this.textContent.Location = new System.Drawing.Point(288, 97);
+            this.textContent.BackColor = System.Drawing.Color.White;
+            this.textContent.Location = new System.Drawing.Point(288, 64);
             this.textContent.Name = "textContent";
-            this.textContent.Size = new System.Drawing.Size(100, 25);
+            this.textContent.Size = new System.Drawing.Size(428, 25);
             this.textContent.TabIndex = 2;
-            this.textContent.UseWaitCursor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(751, 303);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.deleteButton);
@@ -148,9 +147,9 @@
             this.Controls.Add(this.textContent);
             this.Controls.Add(this.textDay);
             this.Controls.Add(this.listView1);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
