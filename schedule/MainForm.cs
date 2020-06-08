@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,11 @@ using System.Windows.Forms;
 namespace schedule
 {
     public delegate void ToEditForm(string a, string b, string c);
+
     public partial class MainForm : Form
     {
         public static event ToEditForm ToEditForm;
-
+        string fileName = "data";
         int tCounter = 100;
         AddForm addForm = new AddForm();
         EditForm editForm = new EditForm();
@@ -29,6 +31,7 @@ namespace schedule
             listView1.Sort();
             AddForm.ToMainForm += new ToMainForm(addLIst);
             EditForm.ToMainEdit += new ToMainForm(editList);
+            LoadData();
         }
 
         private void AddListButton_Click(object sender, EventArgs e)
@@ -56,19 +59,19 @@ namespace schedule
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             addForm.ShowDialog();
         }
         public void addLIst(string a, string b,string c)
         {
             listView1.Items.Add(new ListViewItem(new string[] {a,b,c}));
+            SaveData();
         }
         public void editList(string a, string b, string c)
         {
             toChange.SubItems[0].Text = a;
             toChange.SubItems[1].Text = b;
             toChange.SubItems[2].Text = c;
-
+            SaveData();
 
         }
 
@@ -85,6 +88,7 @@ namespace schedule
         {
             listView1.Items.Remove(listView1.FocusedItem);
             listView1.FocusedItem = null;
+            SaveData();
         }
 
         private void editButton_Click(object sender, EventArgs e)
@@ -101,6 +105,73 @@ namespace schedule
                 MessageBox.Show("먼저 바꿀것을 선택 해 주세요");
             }
         }
+        private void LoadData()
+
+        {
+
+            using (TextReader tReader = new StreamReader(fileName))
+
+            {
+                string[] stringLines
+
+                    = tReader.ReadToEnd().Replace("\n", "").Split((char)Keys.Enter);
+
+
+                
+                foreach (string stringLine in stringLines)
+
+                {
+                    if (stringLine != string.Empty)
+
+                    {
+                        string[] stringArray = stringLine.Split(';');
+
+                        
+                        ListViewItem item = new ListViewItem(stringArray[0]);
+
+                        item.SubItems.Add(stringArray[1]);
+
+                        item.SubItems.Add(stringArray[2]);
+                        
+                        listView1.Items.Add(item);
+
+                    }
+
+                }
+
+            }
+
+        }
+        private void SaveData()
+
+        {
+
+
+            // StreamWriter를 이용하여 문자작성기를 생성합니다.
+
+            using (TextWriter tWriter = new StreamWriter(fileName))
+
+            {
+
+                // ListView의 Item을 하나씩 가져와서..
+
+                foreach (ListViewItem item in listView1.Items)
+
+                {
+
+                    // 원하는 형태의 문자열로 한줄씩 기록합니다.
+
+                    tWriter.WriteLine(string.Format("{0};{1};{2}"
+
+                        , item.Text, item.SubItems[1].Text, item.SubItems[2].Text));
+
+                }
+                tWriter.Close();
+            }
+            
+        }
+
+
     }
 
     class ListViewItemComparer : IComparer
