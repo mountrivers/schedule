@@ -171,7 +171,13 @@ namespace schedule
             
         }
 
-
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int indexNum;
+            indexNum = listView1.FocusedItem.Index;
+            string test = listView1.Items[indexNum].SubItems[2].Text;
+            System.Diagnostics.Process.Start(test);
+        }
     }
 
     class ListViewItemComparer : IComparer
