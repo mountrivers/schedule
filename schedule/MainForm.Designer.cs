@@ -40,6 +40,7 @@
             this.textContent = new System.Windows.Forms.TextBox();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,6 +52,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
 >>>>>>> parent of 83e25c7... Revert "주소 기준으로 파싱 시도. 실패"
+=======
+>>>>>>> parent of 312388f... 주소 기준으로 파싱 시도. 실패
 =======
 >>>>>>> parent of 312388f... 주소 기준으로 파싱 시도. 실패
             this.SuspendLayout();
@@ -214,6 +217,7 @@
             this.panel2.Size = new System.Drawing.Size(406, 90);
             this.panel2.TabIndex = 14;
             // 
+<<<<<<< HEAD
             // label1
             // 
             this.label1.AutoSize = true;
@@ -236,6 +240,8 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "내용";
             // 
+=======
+>>>>>>> parent of 312388f... 주소 기준으로 파싱 시도. 실패
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -282,6 +288,7 @@
         private System.Windows.Forms.TextBox textContent;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel2;
@@ -291,6 +298,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.WebBrowser webBrowser1;
 >>>>>>> parent of 83e25c7... Revert "주소 기준으로 파싱 시도. 실패"
+=======
+>>>>>>> parent of 312388f... 주소 기준으로 파싱 시도. 실패
 =======
 >>>>>>> parent of 312388f... 주소 기준으로 파싱 시도. 실패
     }
