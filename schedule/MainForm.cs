@@ -190,7 +190,7 @@ namespace schedule
     {
         public int Compare(object x, object y)
         {
-          String.Compare(((ListViewItem)x).SubItems[0].Text, ((ListViewItem)y).SubItems[0].Text);
+           return String.Compare(((ListViewItem)x).SubItems[0].Text, ((ListViewItem)y).SubItems[0].Text);
         }
     }
 }
