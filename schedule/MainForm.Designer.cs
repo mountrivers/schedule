@@ -38,6 +38,7 @@
             this.textDay = new System.Windows.Forms.TextBox();
             this.linkButton = new System.Windows.Forms.Button();
             this.textContent = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,6 +46,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+=======
+            this.button2 = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+>>>>>>> parent of 83e25c7... Revert "주소 기준으로 파싱 시도. 실패"
             this.SuspendLayout();
             // 
             // panel1
@@ -228,14 +233,46 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "내용";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(309, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(755, 13);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(250, 250);
+            this.webBrowser1.TabIndex = 8;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(732, 318);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
+=======
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1046, 338);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.linkButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textContent);
+            this.Controls.Add(this.textDay);
+            this.Controls.Add(this.listView1);
+>>>>>>> parent of 83e25c7... Revert "주소 기준으로 파싱 시도. 실패"
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -260,11 +297,16 @@
         private System.Windows.Forms.TextBox textDay;
         private System.Windows.Forms.Button linkButton;
         private System.Windows.Forms.TextBox textContent;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+=======
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+>>>>>>> parent of 83e25c7... Revert "주소 기준으로 파싱 시도. 실패"
     }
 }
 
