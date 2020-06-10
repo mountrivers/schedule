@@ -1,6 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Net;
+
 namespace schedule
 {
     public delegate void ToEditForm(string a, string b, string c);
@@ -124,7 +120,7 @@ namespace schedule
             {
                 string[] stringLines
 
-                    = tReader.ReadToEnd().Replace("\n", "").Split((char)System.Windows.Forms.Keys.Enter);
+                    = tReader.ReadToEnd().Replace("\n", "").Split((char)Keys.Enter);
 
 
                 
@@ -187,27 +183,6 @@ namespace schedule
             indexNum = listView1.FocusedItem.Index;
             string test = listView1.Items[indexNum].SubItems[2].Text;
             System.Diagnostics.Process.Start(test);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            String path = "https://jasoseol.com/recruit/37471";
-
-            using (WebClient client = new WebClient())
-            {
-                client.Encoding = System.Text.Encoding.UTF8;
-                string data = client.DownloadString(path);
-                try
-                {
-                    JArray jarr = JArray.Parse(data);
-                    foreach (JObject jobj in jarr)
-                    {
-                        MessageBox.Show("{ key.rank}");
-                    }
-                }
-                catch(Exception ex) { }
-               
-            }
         }
     }
 
