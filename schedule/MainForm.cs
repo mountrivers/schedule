@@ -191,14 +191,12 @@ namespace schedule
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String path = "https://jasoseol.com/recruit/37471:1";
+            String path = "https://jasoseol.com/recruit/37471";
 
             using (WebClient client = new WebClient())
             {
                 client.Encoding = System.Text.Encoding.UTF8;
                 string data = client.DownloadString(path);
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-                doc.LoadHtml(data);
                 try
                 {
                     JArray jarr = JArray.Parse(data);
