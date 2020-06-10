@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -40,6 +39,7 @@
             this.linkButton = new System.Windows.Forms.Button();
             this.textContent = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,19 +54,10 @@
             this.panel1.Controls.Add(this.textContent);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonExit);
-            this.panel1.Location = new System.Drawing.Point(51, 12);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 306);
+            this.panel1.Size = new System.Drawing.Size(805, 318);
             this.panel1.TabIndex = 7;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.Location = new System.Drawing.Point(706, 3);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(39, 23);
-            this.buttonExit.TabIndex = 1;
-            this.buttonExit.Text = "X";
-            this.buttonExit.UseVisualStyleBackColor = true;
             // 
             // editButton
             // 
@@ -164,14 +155,25 @@
             this.button1.Text = "일정추가";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(706, 3);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(39, 23);
+            this.buttonExit.TabIndex = 1;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1286, 756);
+            this.ClientSize = new System.Drawing.Size(804, 318);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
