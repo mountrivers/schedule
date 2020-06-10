@@ -22,7 +22,8 @@ namespace schedule
         AddForm addForm = new AddForm();
         EditForm editForm = new EditForm();
         ListViewItem toChange;
-
+        bool isMove;
+        Point fPt;
         public MainForm()
         {
             InitializeComponent();
@@ -183,6 +184,29 @@ namespace schedule
             indexNum = listView1.FocusedItem.Index;
             string test = listView1.Items[indexNum].SubItems[2].Text;
             System.Diagnostics.Process.Start(test);
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMove = true;
+            fPt = new Point(e.X, e.Y);
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMove = false;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMove && (e.Button & MouseButtons.Left) == MouseButtons.Left)
+                Location = new Point(this.Left - (fPt.X - e.X), this.Top - (fPt.Y - e.Y));
+
         }
     }
 

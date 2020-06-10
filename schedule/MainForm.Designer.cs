@@ -38,8 +38,9 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.textContent = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -52,7 +53,7 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 1);
+            this.listView1.Location = new System.Drawing.Point(27, 12);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(269, 306);
@@ -81,7 +82,7 @@
             // 
             this.textDay.BackColor = System.Drawing.Color.White;
             this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textDay.Location = new System.Drawing.Point(555, 21);
+            this.textDay.Location = new System.Drawing.Point(582, 32);
             this.textDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textDay.Name = "textDay";
             this.textDay.Size = new System.Drawing.Size(161, 25);
@@ -90,7 +91,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(288, 228);
+            this.button1.Location = new System.Drawing.Point(315, 239);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 45);
@@ -102,7 +103,7 @@
             // linkButton
             // 
             this.linkButton.BackColor = System.Drawing.Color.White;
-            this.linkButton.Location = new System.Drawing.Point(288, 129);
+            this.linkButton.Location = new System.Drawing.Point(315, 140);
             this.linkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.linkButton.Name = "linkButton";
             this.linkButton.Size = new System.Drawing.Size(194, 45);
@@ -114,7 +115,7 @@
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(522, 228);
+            this.deleteButton.Location = new System.Drawing.Point(549, 239);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(194, 45);
@@ -126,7 +127,7 @@
             // editButton
             // 
             this.editButton.BackColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(522, 129);
+            this.editButton.Location = new System.Drawing.Point(549, 140);
             this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(194, 45);
@@ -138,50 +139,57 @@
             // textContent
             // 
             this.textContent.BackColor = System.Drawing.Color.White;
-            this.textContent.Location = new System.Drawing.Point(288, 64);
+            this.textContent.Location = new System.Drawing.Point(315, 75);
             this.textContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textContent.Name = "textContent";
             this.textContent.Size = new System.Drawing.Size(428, 25);
             this.textContent.TabIndex = 2;
             // 
-            // button2
+            // panel1
             // 
-            this.button2.Location = new System.Drawing.Point(309, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.buttonExit);
+            this.panel1.Controls.Add(this.editButton);
+            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.deleteButton);
+            this.panel1.Controls.Add(this.textDay);
+            this.panel1.Controls.Add(this.linkButton);
+            this.panel1.Controls.Add(this.textContent);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(771, 335);
+            this.panel1.TabIndex = 7;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // webBrowser1
+            // buttonExit
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(755, 13);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(250, 250);
-            this.webBrowser1.TabIndex = 8;
+            this.buttonExit.Location = new System.Drawing.Point(706, 3);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(39, 23);
+            this.buttonExit.TabIndex = 1;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1046, 338);
-            this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.editButton);
-            this.Controls.Add(this.deleteButton);
-            this.Controls.Add(this.linkButton);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textContent);
-            this.Controls.Add(this.textDay);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(769, 339);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -197,7 +205,7 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.TextBox textContent;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
