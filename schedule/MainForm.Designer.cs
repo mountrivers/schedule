@@ -139,7 +139,7 @@
             // 
             this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
             this.editButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("editButton.BackgroundImage")));
-            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.editButton.FlatAppearance.BorderSize = 0;
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Location = new System.Drawing.Point(585, 218);
@@ -173,7 +173,7 @@
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(723, 328);
+            this.panel1.Size = new System.Drawing.Size(717, 314);
             this.panel1.TabIndex = 7;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -184,7 +184,7 @@
             this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Location = new System.Drawing.Point(677, 10);
+            this.buttonExit.Location = new System.Drawing.Point(670, 9);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(34, 18);
@@ -199,7 +199,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(719, 325);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(713, 315);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
