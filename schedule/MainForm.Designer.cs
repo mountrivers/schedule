@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.listView1 = new System.Windows.Forms.ListView();
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,10 +54,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(15, 5);
+            this.listView1.Location = new System.Drawing.Point(13, 9);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(269, 306);
+            this.listView1.Size = new System.Drawing.Size(248, 308);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -82,75 +83,80 @@
             // 
             this.textDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(189)))));
             this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textDay.Location = new System.Drawing.Point(546, 98);
+            this.textDay.Location = new System.Drawing.Point(284, 218);
             this.textDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textDay.Name = "textDay";
-            this.textDay.Size = new System.Drawing.Size(161, 25);
+            this.textDay.Size = new System.Drawing.Size(171, 21);
             this.textDay.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(304, 249);
+            this.button1.Location = new System.Drawing.Point(466, 270);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 45);
+            this.button1.Size = new System.Drawing.Size(103, 36);
             this.button1.TabIndex = 3;
-            this.button1.Text = "일정추가";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkButton
             // 
             this.linkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
+            this.linkButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("linkButton.BackgroundImage")));
+            this.linkButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.linkButton.FlatAppearance.BorderSize = 0;
             this.linkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.linkButton.Location = new System.Drawing.Point(304, 200);
+            this.linkButton.Location = new System.Drawing.Point(466, 218);
             this.linkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.linkButton.Name = "linkButton";
-            this.linkButton.Size = new System.Drawing.Size(194, 45);
+            this.linkButton.Size = new System.Drawing.Size(103, 36);
             this.linkButton.TabIndex = 4;
-            this.linkButton.Text = "링크";
+            this.linkButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkButton.UseVisualStyleBackColor = false;
             this.linkButton.Click += new System.EventHandler(this.linkButton_Click);
             // 
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
+            this.deleteButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deleteButton.BackgroundImage")));
+            this.deleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.deleteButton.FlatAppearance.BorderSize = 0;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Location = new System.Drawing.Point(513, 249);
+            this.deleteButton.Location = new System.Drawing.Point(585, 270);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(194, 45);
+            this.deleteButton.Size = new System.Drawing.Size(103, 36);
             this.deleteButton.TabIndex = 5;
-            this.deleteButton.Text = "삭제";
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // editButton
             // 
             this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
+            this.editButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("editButton.BackgroundImage")));
+            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.editButton.FlatAppearance.BorderSize = 0;
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editButton.Location = new System.Drawing.Point(513, 200);
+            this.editButton.Location = new System.Drawing.Point(585, 218);
             this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(194, 45);
+            this.editButton.Size = new System.Drawing.Size(103, 36);
             this.editButton.TabIndex = 6;
-            this.editButton.Text = "수정";
             this.editButton.UseVisualStyleBackColor = false;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // textContent
             // 
             this.textContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(189)))));
-            this.textContent.Location = new System.Drawing.Point(304, 138);
+            this.textContent.Location = new System.Drawing.Point(284, 270);
             this.textContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textContent.Name = "textContent";
-            this.textContent.Size = new System.Drawing.Size(403, 25);
+            this.textContent.Size = new System.Drawing.Size(171, 21);
             this.textContent.TabIndex = 2;
             // 
             // panel1
@@ -165,8 +171,9 @@
             this.panel1.Controls.Add(this.textContent);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 318);
+            this.panel1.Size = new System.Drawing.Size(723, 328);
             this.panel1.TabIndex = 7;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -174,12 +181,13 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(57)))), ((int)(((byte)(52)))));
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Location = new System.Drawing.Point(689, 12);
+            this.buttonExit.Location = new System.Drawing.Point(677, 10);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(39, 23);
+            this.buttonExit.Size = new System.Drawing.Size(34, 18);
             this.buttonExit.TabIndex = 1;
             this.buttonExit.Text = "X";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -187,10 +195,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.ClientSize = new System.Drawing.Size(737, 317);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(719, 325);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
