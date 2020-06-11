@@ -41,6 +41,7 @@
             this.textContent = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,10 +84,10 @@
             // 
             this.textDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(189)))));
             this.textDay.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textDay.Location = new System.Drawing.Point(284, 218);
+            this.textDay.Location = new System.Drawing.Point(434, 11);
             this.textDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textDay.Name = "textDay";
-            this.textDay.Size = new System.Drawing.Size(171, 21);
+            this.textDay.Size = new System.Drawing.Size(190, 21);
             this.textDay.TabIndex = 2;
             // 
             // button1
@@ -96,10 +97,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(466, 270);
+            this.button1.Location = new System.Drawing.Point(267, 104);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 36);
+            this.button1.Size = new System.Drawing.Size(140, 36);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -111,10 +112,10 @@
             this.linkButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.linkButton.FlatAppearance.BorderSize = 0;
             this.linkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.linkButton.Location = new System.Drawing.Point(466, 218);
+            this.linkButton.Location = new System.Drawing.Point(267, 223);
             this.linkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.linkButton.Name = "linkButton";
-            this.linkButton.Size = new System.Drawing.Size(103, 36);
+            this.linkButton.Size = new System.Drawing.Size(140, 36);
             this.linkButton.TabIndex = 4;
             this.linkButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkButton.UseVisualStyleBackColor = false;
@@ -127,10 +128,10 @@
             this.deleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.deleteButton.FlatAppearance.BorderSize = 0;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Location = new System.Drawing.Point(585, 270);
+            this.deleteButton.Location = new System.Drawing.Point(267, 277);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(103, 36);
+            this.deleteButton.Size = new System.Drawing.Size(140, 36);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -139,13 +140,13 @@
             // 
             this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
             this.editButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("editButton.BackgroundImage")));
-            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.editButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.editButton.FlatAppearance.BorderSize = 0;
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editButton.Location = new System.Drawing.Point(585, 218);
+            this.editButton.Location = new System.Drawing.Point(267, 58);
             this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(103, 36);
+            this.editButton.Size = new System.Drawing.Size(140, 36);
             this.editButton.TabIndex = 6;
             this.editButton.UseVisualStyleBackColor = false;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
@@ -153,10 +154,10 @@
             // textContent
             // 
             this.textContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(189)))));
-            this.textContent.Location = new System.Drawing.Point(284, 270);
+            this.textContent.Location = new System.Drawing.Point(267, 11);
             this.textContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textContent.Name = "textContent";
-            this.textContent.Size = new System.Drawing.Size(171, 21);
+            this.textContent.Size = new System.Drawing.Size(150, 21);
             this.textContent.TabIndex = 2;
             // 
             // panel1
@@ -170,10 +171,11 @@
             this.panel1.Controls.Add(this.linkButton);
             this.panel1.Controls.Add(this.textContent);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(717, 314);
+            this.panel1.Size = new System.Drawing.Size(631, 323);
             this.panel1.TabIndex = 7;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -181,10 +183,10 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(120)))), ((int)(((byte)(94)))));
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(239)))), ((int)(((byte)(246)))));
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Location = new System.Drawing.Point(670, 9);
+            this.buttonExit.Location = new System.Drawing.Point(481, 213);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(34, 18);
@@ -193,14 +195,24 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Turquoise;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(413, 58);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(211, 255);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(713, 315);
+            this.ClientSize = new System.Drawing.Size(628, 322);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -228,5 +240,6 @@
         private System.Windows.Forms.TextBox textContent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button button2;
     }
 }
