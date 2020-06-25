@@ -208,6 +208,7 @@ namespace schedule
         }
     }
 
+    /* 리스트 뷰 아이템 정렬 */
     class ListViewItemComparer : IComparer
     {
         public int Compare(object x, object y)
