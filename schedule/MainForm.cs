@@ -112,6 +112,10 @@ namespace schedule
                 MessageBox.Show("먼저 바꿀것을 선택 해 주세요");
             }
         }
+
+
+
+        /* 데이터 불러오기 */
         private void LoadData()
 
         {
@@ -152,21 +156,14 @@ namespace schedule
         private void SaveData()
 
         {
-
-
-            // StreamWriter를 이용하여 문자작성기를 생성합니다.
-
+           
             using (TextWriter tWriter = new StreamWriter(fileName))
 
             {
 
-                // ListView의 Item을 하나씩 가져와서..
-
                 foreach (ListViewItem item in listView1.Items)
 
                 {
-
-                    // 원하는 형태의 문자열로 한줄씩 기록합니다.
 
                     tWriter.WriteLine(string.Format("{0};{1};{2}"
 
