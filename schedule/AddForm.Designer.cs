@@ -49,14 +49,14 @@
             this.year.Location = new System.Drawing.Point(53, 26);
             this.year.Name = "year";
             this.year.Size = new System.Drawing.Size(100, 25);
-            this.year.TabIndex = 0;
+            this.year.TabIndex = 1;
             // 
             // month
             // 
             this.month.Location = new System.Drawing.Point(187, 26);
             this.month.Name = "month";
             this.month.Size = new System.Drawing.Size(100, 25);
-            this.month.TabIndex = 1;
+            this.month.TabIndex = 2;
             // 
             // saveButton
             // 
@@ -73,14 +73,14 @@
             this.date.Location = new System.Drawing.Point(316, 26);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(100, 25);
-            this.date.TabIndex = 2;
+            this.date.TabIndex = 3;
             // 
             // content
             // 
             this.content.Location = new System.Drawing.Point(53, 69);
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(363, 25);
-            this.content.TabIndex = 4;
+            this.content.TabIndex = 5;
             // 
             // label1
             // 
@@ -132,7 +132,7 @@
             this.time.Location = new System.Drawing.Point(463, 26);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(100, 25);
-            this.time.TabIndex = 3;
+            this.time.TabIndex = 4;
             // 
             // cancleButton
             // 
@@ -158,7 +158,7 @@
             this.link.Location = new System.Drawing.Point(53, 101);
             this.link.Name = "link";
             this.link.Size = new System.Drawing.Size(363, 25);
-            this.link.TabIndex = 5;
+            this.link.TabIndex = 6;
             // 
             // AddForm
             // 
