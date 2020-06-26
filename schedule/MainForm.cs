@@ -24,6 +24,8 @@ namespace schedule
         ListViewItem toChange;
         bool isMove;
         Point fPt;
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -34,13 +36,8 @@ namespace schedule
             EditForm.ToMainEdit += new ToMainForm(editList);
             LoadData();
         }
+        
 
-        private void AddListButton_Click(object sender, EventArgs e)
-        {
-            listView1.Items.Add(new ListViewItem(new string[] {tCounter.ToString(), "100","as" }));
-            tCounter += new Random().Next(-100, 100);
-           
-        }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
