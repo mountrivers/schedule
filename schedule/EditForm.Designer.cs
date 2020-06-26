@@ -164,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(592, 163);
             this.Controls.Add(this.cancleButton);
             this.Controls.Add(this.label6);
@@ -180,7 +181,7 @@
             this.Controls.Add(this.month);
             this.Controls.Add(this.year);
             this.Name = "EditForm";
-            this.Text = "Edit";
+            this.Text = "수정";
             this.ResumeLayout(false);
             this.PerformLayout();
 
