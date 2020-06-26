@@ -59,11 +59,13 @@ namespace schedule
         {
             addForm.ShowDialog();
         }
+
         public void addLIst(string a, string b,string c)
         {
             listView1.Items.Add(new ListViewItem(new string[] {a,b,c}));
             SaveData();
         }
+
         public void editList(string a, string b, string c)
         {
             toChange.SubItems[0].Text = a;
