@@ -60,12 +60,14 @@
             // 
             // saveButton
             // 
+            this.saveButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.saveButton.Location = new System.Drawing.Point(463, 71);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(100, 23);
             this.saveButton.TabIndex = 10;
             this.saveButton.Text = "저장";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.SaveButtonClick);
             // 
             // date
@@ -136,12 +138,14 @@
             // 
             // cancleButton
             // 
+            this.cancleButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cancleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cancleButton.Location = new System.Drawing.Point(463, 100);
             this.cancleButton.Name = "cancleButton";
             this.cancleButton.Size = new System.Drawing.Size(100, 23);
             this.cancleButton.TabIndex = 11;
             this.cancleButton.Text = "종료";
-            this.cancleButton.UseVisualStyleBackColor = true;
+            this.cancleButton.UseVisualStyleBackColor = false;
             this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
             // 
             // label6
